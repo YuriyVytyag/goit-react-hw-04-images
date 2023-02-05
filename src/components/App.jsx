@@ -13,14 +13,6 @@ export const App = () => {
   const [totalHits, setTotalHits] = useState(null);
   const [loading, setLoading] = useState(1);
 
-  // state = {
-  //   images: [],
-  //   searchQuery: '',
-  //   page: 1,
-  //   totalHits: null,
-  //   loading: false,
-  // };
-
   useEffect(() => {
     if (searchQuery.trim() === '') return;
     setLoading(true);
